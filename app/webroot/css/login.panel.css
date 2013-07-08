@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+div #loginPanel {
+	float: right;
+	height: 50px;
+	float: right;
+}
+div #logoutPanel {
+	padding-top: 20px;
+	padding-right: 10px;
+	float: right;
+}
+
+div #logoutPanel a{
+	line-height: 20px;
+	background-color: #996633;
+	color: #fff;
+	padding: 0px 0px;
+}
+div #logoutPanel a {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+div #logoutPanel a:hover {
+	color: #fff;
+	/*background: #003d4c;*/
+	text-decoration: underline;
+}
+
+#AuthenticationLogin div {
+	margin: 0px;
+}
+
+#AuthenticationLogin {
+	padding: 0px;
+	margin: 0px;
+	spacing: 0px;
+	width: 515px;
+}
+
+#AuthenticationLogin div.input
+{
+	padding-right: 15px;
+	color: white;
+	font-size: 13px;
+	float: left;
+	clear: none;
+}
+
+#AuthenticationLogin div.submit
+{
+	padding-top: 15px;
+	font-size: 13px;
+	height: 30px;
+	clear: none;
+}

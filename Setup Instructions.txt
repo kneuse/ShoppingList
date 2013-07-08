@@ -1,0 +1,38 @@
+Windows Instructions
+-------------------------------------------------------------------------------
+1. Configure database username and password under app/Config/database.php
+
+2. cakePHP framework required mod_rewrite to be enabled:
+
+  A. In apache config file, change AllowOverride to  
+    AllowOverride All
+	
+  B. Make sure the mod_rewrite is enabled
+  
+3. Load shoppingList.sql into mysql
+
+Linux Instructions
+-------------------------------------------------------------------------------
+1. Fix permissions for 
+    ShoppingList/app/tmp/cache
+    ShoppingList/app/tmp/logs
+
+2. Configure database username and password under app/Config/database.php
+
+3. cakePHP framework required mod_rewrite to be enabled:
+
+  A. In apache config file, change AllowOverride to
+    AllowOverride All
+
+  B. Look in mods_enabled for a link to the module by running
+
+    # ls /etc/apache2/mods-enabled | grep rewrite
+
+    If this outputs rewrite.load then the module is enabled. (Note: your path to apache2 may not be /etc/, though it's likely to be.)
+    To enable mod_rewrite if it's not already:
+    # a2enmod rewrite
+
+    Reload all apache config files:
+    # service apache2 restart
+	
+4. Load shoppingList.sql into mysql
